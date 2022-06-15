@@ -3,7 +3,7 @@
 Vous venez de clone le côté front du projet Boule de poils !
 
 # Je viens de cloner le repos, que dois-je faire ??
-Alors, mon p'tit, il faut tout d'abord faire la commande suivante :
+Alors, il faut tout d'abord faire la commande suivante :
 ```sh
 yarn
 ```
