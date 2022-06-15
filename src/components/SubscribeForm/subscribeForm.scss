@@ -1,0 +1,36 @@
+@use 'src/styles/vars';
+
+.css-178yklu {
+  margin-top: 1em;
+}
+
+.error__messages--subscription {
+  width: 100%;
+  margin-top: vars.$mainPadding;
+
+  .MuiAlert-message.css-acap47-MuiAlert-message ul {
+    text-align: left;
+  }
+
+}
+
+.error__messages--invalid-password.css-c80q09-MuiPaper-root-MuiAlert-root {
+  margin-top: vars.$superSmallPadding;
+  padding: 0px 16px;
+  text-align: left;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.registration__message--succes {
+  margin-top: 1em;
+}
+
+.registration__message--failed,
+.error__messages--invalid-mail {
+  margin-top: 1em;
+}
+
+.registration__redirection--login {
+
+  text-decoration: underline;
+}

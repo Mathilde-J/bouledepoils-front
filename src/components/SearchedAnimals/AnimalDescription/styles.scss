@@ -1,0 +1,124 @@
+@use 'src/styles/vars';
+
+.animal__profil__description {
+  position: relative;
+  top: -1.5em;
+
+  
+
+  .animal__caracteristics {
+    position: relative;
+    margin: 0 auto;
+    border-radius: vars.$mainBorderRadius;
+    background: vars.$medium_color;
+    width: 90%;
+    padding: vars.$smallPadding;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+
+    .animal__name {
+      text-align: center;
+      font-family: 'Arima Madurai', 'Roboto';
+      font-size: 2em;
+      font-weight: 700;
+      padding: vars.$superSmallPadding
+    }
+
+    .animal__caracteristics--details {
+      font-family: 'Arima Madurai', 'Roboto';
+      font-weight: 700;
+      display: flex;
+      justify-content: space-between;
+      padding: vars.$smallPadding vars.$mediumPadding;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: vars.$back_color_2;
+      z-index: -3;
+      border-top-left-radius: vars.$mainBorderRadius;
+      border-top-right-radius: vars.$mainBorderRadius;
+    }
+
+  }
+
+  .animal__description {
+    position: relative;
+    text-align: vars.$textAlignLeft;
+    z-index: -1;
+    margin: 0 auto;
+    width: 90%;
+    font-family: 'Lato', 'Roboto';
+      font-size: 1em;
+      color: white;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+
+    background-color: vars.$back_color_2;
+    border-bottom-left-radius: vars.$mainBorderRadius;
+    border-bottom-right-radius: vars.$mainBorderRadius;
+    padding: vars.$smallPadding vars.$mediumPadding vars.$bigPadding;
+
+    .animal__specificity--answer {
+      text-align: left;
+      display: block;
+      padding-top: vars.$smallPadding - .2em;
+    }
+
+    .animal__specificity {
+      text-align: left;
+    }
+
+    & p {
+      letter-spacing: vars.$textSpacing;
+      padding-top: vars.$smallPadding + .8em;
+    }
+  }
+
+
+}
+
+// A partir de la largeur 700px et plus
+@media (min-width: 700px) {
+  .animal__profil__description {
+    .animal__caracteristics {
+      width: 85%;
+    }
+
+    .animal__caracteristics {
+
+      & h1 {
+        font-size: vars.$baseFontSize;
+      }
+
+      .animal__caracteristics--details {
+        font-size: vars.$smallFontSize;
+        padding: vars.$smallPadding vars.$bigPadding;
+
+      }
+
+    }
+
+    .animal__description {
+      width: 85%;
+    }
+  }
+}
+
+// A partir de la largeur 1024px et plus
+@media (min-width: 1024px) {
+  .animal__profil__description {
+    .animal__caracteristics {
+      width: 43em;
+    }
+
+    .animal__description {
+      width: 43em;
+    }
+  }
+}

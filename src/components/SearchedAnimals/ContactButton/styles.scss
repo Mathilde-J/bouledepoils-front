@@ -1,0 +1,18 @@
+@use 'src/styles/vars';
+
+.contact {
+  .contact__button--display {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    padding: vars.$mainPadding vars.$baseFontSize;
+    border-radius: vars.$buttonBorderRadius;
+    position: relative;
+    top: -3em;
+    font-family: 'Arima Madurai', 'Roboto';
+      font-size: 1.2em;
+      font-weight: 700;
+    border: none;
+    background: vars.$cta_color_1;
+  }
+
+  height: 2em;
+}

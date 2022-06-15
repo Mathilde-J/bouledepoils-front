@@ -1,0 +1,27 @@
+.nav__arrows {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 15em;
+  height: 0;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 5%;
+
+  :nth-child(2).button__arrow img {
+    transform: rotateZ(180deg);
+  }
+}
+
+@media (min-width: 700px) {
+  .nav__arrows {
+    padding: 0 1%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav__arrows {
+    top: 29em;
+    padding: 0 15%;
+  }
+}

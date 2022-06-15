@@ -1,0 +1,209 @@
+.team {
+  padding-top: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+    &__title {
+      font-family: 'Arima Madurai', 'Roboto';
+      font-size: 2em;
+      font-weight: 700;
+      margin-bottom: 1em;
+      width: 90vw;
+      text-align: center;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__card {
+      margin-bottom: 1em;
+      width: 50vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__pic {
+      width: 50vw;
+      height: 50vw;
+      border-radius: 50%;
+      border: 1px solid black;
+      object-fit: cover;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;      margin-bottom: 0.5em;
+    }
+     &__name {
+      font-family: 'Arima Madurai', 'Roboto';
+      font-size: 1.5em;
+      font-weight: 700;
+      width: 90vw;
+      text-align: center;
+     }
+
+     &__role {
+      font-family: 'Lato', 'Roboto';
+      font-size: 1.2em;
+       text-align: center;
+      width: 40vw;
+     }
+
+     &__ldkn {
+        color: #0A66C2;
+     }
+
+     &__avatar {
+       height: 50vw;
+     }
+}
+
+.symfoLogo {
+  font-size: 3em;
+  position: relative;
+  top: -45vw;
+  right: -40vw;
+
+}
+
+.reactLogo {
+  font-size: 3em;
+  position: relative;
+  top: -45vw;
+  right: -40vw;
+  color: #0A66C2;
+
+}
+
+@media only screen and (min-width: 426px) {
+  .team {
+    &__card {
+      width: 40vw;
+    }
+
+    &__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    }
+    &__name {
+      width: 50vw;
+     }
+
+     &__role {
+      width: 50vw;
+     }
+     &__pic {
+      width: 30vw;
+      height: 30vw;
+      object-fit: cover;
+    }
+    &__avatar {
+      height: 30vw;
+      width: 30vw;
+    }
+  }
+
+  .symfoLogo {
+    font-size: 3em;
+    position: relative;
+    top: -25vw;
+    right: -25vw;
+  
+  }
+  
+  .reactLogo {
+    font-size: 3em;
+    position: relative;
+    top: -25vw;
+    right: -25vw;
+    color: #0A66C2;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+
+}
+
+@media only screen and (min-width: 1025px) {
+  .team {
+    &__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    }
+
+    &__card {
+      margin-bottom: 1em;
+      width: 27vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__name {
+      width: 25vw;
+    }
+
+     &__role {
+       text-align: center;
+        width: 30vw;
+     }
+
+     &__pic {
+       width: 15vw;
+       height: 15vw;
+       object-fit: cover;
+     }
+
+     &__avatar {
+       height: 15vw;
+       width: 15vw;
+     }
+  }
+
+  .symfoLogo {
+    font-size: 2em;
+    position: relative;
+    top: -15vw;
+    right: -12vw;
+  
+  }
+  
+  .reactLogo {
+    font-size: 2em;
+    position: relative;
+    top: -15vw;
+    right: -12vw;
+    color: #0A66C2;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .team {
+    &__card {
+      width: 30vw;
+    }
+  }
+
+
+  .symfoLogo {
+    font-size: 3em;
+    position: relative;
+    top: -13vw;
+    right: -12vw;
+  
+  }
+  
+  .reactLogo {
+    font-size: 3em;
+    position: relative;
+    top: -13vw;
+    right: -12vw;
+    color: #0A66C2;
+  }
+}

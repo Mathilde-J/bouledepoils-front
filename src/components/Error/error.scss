@@ -1,0 +1,58 @@
+@use 'src/styles/vars';
+
+.errorbox{
+  padding-top: 110px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.titrerror{
+  color: vars.$cta_color_1;
+  font-size: 5em;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.paragrapherror{
+  text-align: center;
+  color: vars.$cta_color_1;
+  font-family: 'Lato', 'Roboto';
+  font-size: 1.5em;
+  padding-bottom:0.5em;
+}
+
+.errorpicture img{
+  width: 90vw;
+  object-fit: cover;
+}
+
+@media only screen and (min-width: 425px) {
+  .errorpicture img{
+    width: 80vw;
+    object-fit: cover;
+  }
+
+  .titrerror{
+    color: vars.$cta_color_1;
+    font-size: 7em;
+    font-family: 'Press Start 2P', cursive;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .errorpicture img{
+    width: 50vw;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .errorpicture img{
+    width: 20vw;
+    object-fit: cover;
+  }
+}

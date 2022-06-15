@@ -1,0 +1,139 @@
+.advices {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1em;
+  padding-top: 110px;
+  text-align: center;
+
+  &__title {
+    width: 90vw;
+    font-family: 'Arima Madurai', 'Roboto';
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+  }
+
+  &__subtitle {
+    width: 90vw;
+    font-family: 'Arima Madurai', 'Roboto';
+    font-size: 1.5em;
+    font-style: italic;
+    margin-bottom: 0.5em;
+    text-align: center;
+  }
+
+  &__text {
+    font-family: 'Lato', 'Roboto';
+    font-size: 1.2em;
+    width: 90vw;
+    margin-bottom: 0.5em;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.one {
+  display: none;
+}
+
+.three {
+  order: -3;
+}
+
+.small-pic img{
+  width: 100vw;
+  height: 100vw;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+@media only screen and (min-width: 425px) {
+  .one {
+    display: block;
+  }
+
+  .three {
+    order: 0;
+    margin-right: 2.5vw;
+    margin-left: 2.5vw;
+    align-self: flex-start;
+  }
+
+  .four {
+    margin-right: 2.5vw;
+    margin-left: 2.5vw;
+    align-self: flex-end;
+  }
+
+  .big-pic img{
+    width: 95vw;
+    height: 50vw;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    
+  }
+
+  .small-pic img{
+    width: 45vw;
+    height: 45vw;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+
+  .one {
+    align-self: flex-start;
+  }
+
+  .two h3, .two p{
+    width: 40vw;
+  }
+
+  .three {
+    order: 0;
+    margin-right: 2.5vw;
+    margin-left: 5vw;
+    align-self: flex-start;
+    display: none;
+  }
+
+  .four {
+    margin-right: 5vw;
+    margin-left: 2.5vw;
+    align-self: flex-end;
+    margin-bottom: 1em;
+    display: none;
+  }
+
+  .big-pic img{
+    width: 40vw;
+    height: 40vw;
+    margin-right: 2em;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 1em;
+  }
+
+  .small-pic img{
+    width: 25vw;
+    height: 25vw;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+}
+

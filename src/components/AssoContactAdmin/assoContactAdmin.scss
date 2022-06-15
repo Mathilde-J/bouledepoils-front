@@ -1,0 +1,30 @@
+.join {
+  padding-top: 110px;
+  width: 80vw;
+  text-align: center;
+
+  &__title {
+    font-family: 'Arima Madurai', 'Roboto';
+      font-size: 2em;
+      font-weight: 700;
+  }
+
+  &__picture {
+    width: 80vw;
+    margin-bottom: 1em;
+  }
+
+  &__subtitle {
+    font-family: 'Arima Madurai', 'Roboto';
+    font-size: 1.5em;
+    font-style: italic;
+    margin-bottom: 1em;
+
+  }
+
+  &__text {
+    font-family: 'Lato', 'Roboto';
+    font-size: 1.2em;
+    margin-bottom: 1em;
+  }
+}

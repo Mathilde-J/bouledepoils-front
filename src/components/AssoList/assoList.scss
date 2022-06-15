@@ -1,0 +1,123 @@
+@use 'src/styles/vars';
+
+
+.assoInfo {
+  padding-top: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+    &__title {
+      font-family: 'Arima Madurai', 'Roboto';
+      font-size: 2em;
+      font-weight: 700;
+      margin-bottom: 0.5em;
+    }
+
+    &__subtitle {
+      font-family: 'Lato', 'Roboto';
+      font-size: 1.2em;
+      width: 90vw;
+      margin-bottom: 0.5em;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      padding: 1vw;
+    }
+
+    &__card {
+      text-align: center;
+      padding: 1em;
+      width: 80vw;
+      margin-bottom: 1em;
+      border: 1px solid vars.$back_color_1;
+      border-radius: 20px;
+      box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;    }
+
+    &__name {
+        font-family: 'Arima Madurai', 'Roboto';
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-bottom: 0.5em;
+    }
+
+    &__description {
+      font-family: 'Lato', 'Roboto';
+
+        margin-bottom: 0.5em;
+    }
+
+    &__el {
+      font-family: 'Lato', 'Roboto';
+
+      &__email{
+        font-family: 'Lato', 'Roboto';
+
+        color: vars.$cta_color_2;
+      }
+    }
+}
+
+.leaflet-container {
+  height: 50vh;
+  width: 80vw;
+  border-radius: 20px;
+  left: 10%;
+}
+
+.leaflet-div-icon {
+  background: transparent;
+  border: none;
+}
+
+@media only screen and (min-width: 425px) {
+  .assoInfo {
+    width: 90vw;
+
+    &__card {
+      
+      width: 75vw;
+    }
+    &__subtitle {
+      width: 90vw;
+      margin-bottom: 0.5em;
+    }
+  } 
+}
+
+@media only screen and (min-width: 768px) {
+  .assoInfo {
+    width: 85vw;
+
+    &__card {
+      
+      width: 40vw;
+    }
+    &__subtitle {
+      width: 80vw;
+      margin-bottom: 0.5em;
+    }
+  } 
+}
+
+@media only screen and (min-width: 1024px) {
+  .assoInfo {
+    width: 80vw;
+
+    &__subtitle {
+      width: 70vw;
+      margin-bottom: 0.5em;
+    }
+
+    &__card {
+      
+      width: 25vw;
+    }
+  } 
+}
