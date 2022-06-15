@@ -59,13 +59,19 @@ export default function SubscribeForm() {
     if (!isPasswordOk(password)) {
       dispatch(checkValidPassword(false));
     }
+    else {
+      dispatch(checkValidPassword(true));
+    }
+
     if (!isEmailOk(mail)) {
       dispatch(checkValidMail(false));
     }
-    if (checkFields && isPasswordOk(password)) {
+    else {
+      dispatch(checkValidMail(true));
+    }
+    if (checkFields && isPasswordOk(password) && isEmailOk(mail)) {
       // dispatch action to call the api and pass
       // the datas for subscription
-      dispatch(checkValidPassword(true));
       dispatch(submitRegistration());
     }
   };
